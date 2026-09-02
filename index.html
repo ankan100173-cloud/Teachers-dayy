@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+<title>Teacher's Day Celebration — Student Council</title>
+<meta name="description" content="Honoring Our Educators — Teacher's Day Celebration invitation from the Student Council.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,700&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Statue backdrop -->
+<div class="statue-backdrop" aria-hidden="true"></div>
+<div class="backdrop-overlay" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- Curtains -->
+<div class="curtain-stage" aria-hidden="true">
+  <div class="curtain curtain-left">
+    <div class="curtain-fold"></div>
+  </div>
+  <div class="curtain curtain-right">
+    <div class="curtain-fold"></div>
+  </div>
+  <div class="curtain-valance"></div>
+  <div class="curtain-tassel tassel-left"></div>
+  <div class="curtain-tassel tassel-right"></div>
+</div>
+
+<!-- Tap-to-open hint -->
+<button id="open-hint" class="open-hint" type="button" aria-label="Tap to open the invitation and start the music">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+    <circle cx="12" cy="12" r="3" fill="currentColor"/>
+    <circle cx="12" cy="12" r="7" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+    <circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.2" opacity="0.3"/>
+  </svg>
+  <span>Tap to Open Invitation</span>
+</button>
+
+<!-- Audio -->
+<audio id="bg-audio" loop preload="auto">
+  <source src="assets\senorita.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-toggle" class="music-btn" aria-label="Toggle background music" aria-pressed="false" title="Play music">
+  <svg class="icon-note" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 18V5l11-2v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="6.5" cy="18" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="17.5" cy="16" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+  </svg>
+  <svg class="icon-mute" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 18V5l11-2v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="6.5" cy="18" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="17.5" cy="16" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="3" y1="3" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<main class="stage">
+  <div class="ornament ornament-top" aria-hidden="true">
+    <svg viewBox="0 0 200 40"><path d="M0 20 Q50 0 100 20 Q150 40 200 20" stroke="currentColor" fill="none" stroke-width="1.5"/><circle cx="100" cy="20" r="4" fill="currentColor"/></svg>
+  </div>
+
+  <section class="card" id="invite-card">
+    <div class="card-corner tl" aria-hidden="true"></div>
+    <div class="card-corner tr" aria-hidden="true"></div>
+    <div class="card-corner bl" aria-hidden="true"></div>
+    <div class="card-corner br" aria-hidden="true"></div>
+
+    <p class="eyebrow">Cordially invited by the Student Council</p>
+
+    <h1 class="title">Honoring Our Educators</h1>
+    <p class="subtitle">Teacher's Day Celebration</p>
+
+    <div class="divider" aria-hidden="true"><span></span><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z" fill="currentColor"/></svg><span></span></div>
+
+    <div class="theme-block">
+      <p class="theme-label">This Year's Theme</p>
+      <p class="theme-text">"Voyage of Life, Guided by You, Teachers"</p>
+    </div>
+
+    <blockquote class="quote">
+      <p>"A good teacher is like a candle — it consumes itself to light the way for others."</p>
+    </blockquote>
+
+    <div class="divider" aria-hidden="true"><span></span><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z" fill="currentColor"/></svg><span></span></div>
+
+    <p class="details-heading">Event Details</p>
+    <ul class="details-grid">
+      <li>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div><span class="detail-label">Date</span><span class="detail-value">5th September</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div><span class="detail-label">Time</span><span class="detail-value">9:00 AM</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div><span class="detail-label">Venue</span><span class="detail-value">School Auditorium</span></div>
+      </li>
+    </ul>
+
+    <p class="footer-note">With gratitude and respect,<br><span>The Student Council</span></p>
+  </section>
+
+  <div class="ornament ornament-bottom" aria-hidden="true">
+    <svg viewBox="0 0 200 40"><path d="M0 20 Q50 40 100 20 Q150 0 200 20" stroke="currentColor" fill="none" stroke-width="1.5"/><circle cx="100" cy="20" r="4" fill="currentColor"/></svg>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
