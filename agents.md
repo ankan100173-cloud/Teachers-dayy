@@ -8,8 +8,8 @@ Static single-page site. No framework, no bundler, no build step. Netlify publis
 
 - `index.html` — all markup for the single page: curtain overlay, statue backdrop layers, invitation card content, hidden `<audio>` element, and the music toggle button.
 - `styles.css` — all styling. Organized by section (statue backdrop, curtains, music button, stage/layout, card). Uses CSS custom properties in `:root` for the color palette (crimson/burgundy/gold).
-- `script.js` — small IIFE handling two behaviors: (1) triggering the curtain-open animation via CSS classes on `<body>` shortly after load, (2) starting/looping background audio after the visitor's first interaction (pointerdown/keydown/touchstart), since browsers block unprompted autoplay with sound.
-- `assets/senorita-instrumental.mp3` — background music, sourced from the user's own GitHub repo and committed locally so Netlify serves it as a same-origin static asset (no external URL dependency).
+- `script.js` — small IIFE handling two behaviors: (1) triggering the curtain-open animation via CSS classes on `<body>`, (2) starting/looping background audio on the visitor's interaction (direct click/touchend on the tap-to-open button and document fallback), optimized for mobile devices (e.g., Android Chrome) to adhere to browser autoplay and user gesture policies without interrupting touch sequences.
+- `assets/senorita.mp3` — background music, committed locally so Netlify serves it as a same-origin static asset (no external URL dependency).
 
 ## Non-obvious decisions
 
